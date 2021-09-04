@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact" method="post">
+        <h3>Formulaire de Contact</h3>
+        <h4>Contactez Moi</h4>
+        <fieldset>
+          <input placeholder="Votre Nom" type="text" tabindex="1" required autofocus class="username"/>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Votre Adresse Mail" type="email" tabindex="2" required class="email"/>
+        </fieldset>
+        <fieldset>
+        <textarea placeholder="Votre Message" tabindex="5" required class="message" ></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit"> ENVOYER</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+      <img src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif" alt=""/>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/doc.js"></script>
+  </body>
+</html>
